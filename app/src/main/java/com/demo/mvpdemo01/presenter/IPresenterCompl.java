@@ -5,7 +5,7 @@ import com.demo.mvpdemo01.model.IUserModle;
 import com.demo.mvpdemo01.view.ILoginView;
 
 /**
- * Created by THF on 17/5/11.
+ * Created by UFO on 17/5/11.
  */
 
 public class IPresenterCompl implements IPresenter {
@@ -24,6 +24,6 @@ public class IPresenterCompl implements IPresenter {
     @Override
     public void login(String phone_number, String password) {
         boolean islogin = iUser.isLogin(phone_number,password);
-        iLoginView.LoginResult(islogin,"0");
+        //iLoginView.LoginResult(islogin,"0");
     }
 }

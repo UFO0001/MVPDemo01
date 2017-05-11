@@ -1,11 +1,14 @@
 package com.demo.mvpdemo01.view;
 
+import com.demo.mvpdemo01.Bean.User;
+
 /**
- * Created by THF on 17/5/11.
+ * Created by UFO on 17/5/11.
  */
 
 public interface ILoginView {
 
-    void LoginResult(boolean ret,String code);
+    void showLoginSuccessMsg(User logsuc_user);
+    void showLoginFailMsg(String errorMsg);
 
 }

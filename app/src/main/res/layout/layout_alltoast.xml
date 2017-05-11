@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/toastall_circle"
+    >
+    <ImageView
+        android:id="@+id/iv_img_allToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:visibility="gone"
+        />
+    <View
+        android:id="@+id/divider_first"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_text_first_allToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/trans_white_80"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+    <View
+        android:id="@+id/divider_second"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_text_second_allToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/trans_white_80"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

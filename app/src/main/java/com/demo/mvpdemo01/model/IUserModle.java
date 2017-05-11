@@ -3,7 +3,7 @@ package com.demo.mvpdemo01.model;
 import android.util.Log;
 
 /**
- * Created by THF on 17/5/11.
+ * Created by UFO on 17/5/11.
  */
 
 public class IUserModle implements IUser{

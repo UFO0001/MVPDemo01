@@ -8,7 +8,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.demo.mvpdemo01.Application.MyApplication;
+import com.demo.mvpdemo01.Bean.User;
 import com.demo.mvpdemo01.R;
+import com.demo.mvpdemo01.Util.AllToast;
 import com.demo.mvpdemo01.presenter.IPresenter;
 import com.demo.mvpdemo01.presenter.IPresenterCompl;
 
@@ -50,24 +53,25 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.tv_regidter:
                 Toast.makeText(this,"注册喽",Toast.LENGTH_LONG).show();
+//                AllToast.Builder builder = new AllToast.Builder(LoginActivity.this).setGravity(AllToast.GRAVITY_BOTTOM).setCustomerView(customview);
+//                MyApplication.getMyInstance().toastShowByBuilder(builder);
+                AllToast.Builder builder = new AllToast.Builder(LoginActivity.this).setGravity(AllToast.GRAVITY_BOTTOM).setFirstText("注册喽").setSecondText("提醒");
+                MyApplication.getMyInstance().toastShowByBuilder(builder);
                 break;
             default:
                 break;
         }
     }
 
+
     @Override
-    public void LoginResult(boolean ret, String code) {
-        Toast.makeText(this,""+ret+code,Toast.LENGTH_LONG).show();
-        if (ret == true){
-            Toast.makeText(this,"登录成功",Toast.LENGTH_LONG).show();
-            //进行跳转
-        }else{
-            if(code == "0"){
-                Toast.makeText(this,"手机号码未注册",Toast.LENGTH_LONG).show();
-            }else{
-                Toast.makeText(this,"其他原因",Toast.LENGTH_LONG).show();
-            }
-        }
+    public void showLoginSuccessMsg(User logsuc_user) {
+        //在Presenter中调用，会通知View更新UI来提示用户数据操作的结果
+
+    }
+
+    @Override
+    public void showLoginFailMsg(String errorMsg) {
+
     }
 }

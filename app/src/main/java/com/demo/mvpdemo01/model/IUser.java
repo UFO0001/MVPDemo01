@@ -1,7 +1,7 @@
 package com.demo.mvpdemo01.model;
 
 /**
- * Created by THF on 17/5/11.
+ * Created by UFO on 17/5/11.
  */
 
 public interface IUser {
