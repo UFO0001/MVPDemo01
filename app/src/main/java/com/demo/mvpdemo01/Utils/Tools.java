@@ -1,4 +1,4 @@
-package com.demo.mvpdemo01.Util;
+package com.demo.mvpdemo01.Utils;
 
 import android.app.Activity;
 import android.content.Context;

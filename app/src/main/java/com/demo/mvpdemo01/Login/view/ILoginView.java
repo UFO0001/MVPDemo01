@@ -1,4 +1,4 @@
-package com.demo.mvpdemo01.view;
+package com.demo.mvpdemo01.Login.view;
 
 import com.demo.mvpdemo01.Bean.User;
 

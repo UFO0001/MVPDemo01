@@ -1,8 +1,6 @@
-package com.demo.mvpdemo01.Util;
+package com.demo.mvpdemo01.Utils;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.os.Build;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.demo.mvpdemo01.Application.MyApplication;
 import com.demo.mvpdemo01.R;
 
 /**

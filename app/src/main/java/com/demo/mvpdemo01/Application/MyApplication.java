@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import com.demo.mvpdemo01.Util.AllToast;
+import com.demo.mvpdemo01.Utils.AllToast;
 
 /**
  * Created by UFO on 17/5/11.
